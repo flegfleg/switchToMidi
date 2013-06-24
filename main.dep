@@ -1,0 +1,14 @@
+main.o: main.c pressanykey/pressanykey.h pressanykey/types.h \
+ pressanykey/endian.h pressanykey/memorymap.h pressanykey/gpio.h \
+ pressanykey/syscon.h pressanykey/utils.h \
+ pressanykey/../pressanykey_usb/usb.h \
+ pressanykey/../pressanykey_usb/../pressanykey/types.h \
+ pressanykey/../pressanykey_usb/usbspec.h pressanykey/ssp.h \
+ pressanykey/timer.h midi.h
+main.c pressanykey/pressanykey.h pressanykey/types.h :
+ pressanykey/endian.h pressanykey/memorymap.h pressanykey/gpio.h :
+ pressanykey/syscon.h pressanykey/utils.h :
+ pressanykey/../pressanykey_usb/usb.h :
+ pressanykey/../pressanykey_usb/../pressanykey/types.h :
+ pressanykey/../pressanykey_usb/usbspec.h pressanykey/ssp.h :
+ pressanykey/timer.h midi.h :
